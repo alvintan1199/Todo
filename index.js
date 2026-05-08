@@ -143,6 +143,17 @@ function main() {
 
         }
 
+        if (choice==4) {
+            console.log();
+            console.log("Delete Task");
+            displayTasks(tasks);
+            console.log();
+            let idToDelete = parseInt(prompt("Enter the ID to delete: "));
+
+            deleteTask(tasks, idToDelete);
+
+        }
+
     if (choice==5) {
         break;
     }
